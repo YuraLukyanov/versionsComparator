@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@//db154.netcracker.com:1522/DBG101S</property>
+        <property name="hibernate.connection.username">U27_D192_6850</property>
+        <property name="hibernate.connection.password">U27_D192_6850</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+        <property name="show_sql">true</property>
+        <mapping class="yura.lukyanov.versionsComparator.hibernate.model.Attribute" />
+        <mapping class="yura.lukyanov.versionsComparator.hibernate.model.ListValue" />
+        <mapping class="yura.lukyanov.versionsComparator.hibernate.model.AttrTypeDefinition" />
+        <mapping class="yura.lukyanov.versionsComparator.hibernate.model.AttrGroup" />
+        <mapping class="yura.lukyanov.versionsComparator.hibernate.model.AttributeSchema" />
+        <mapping class="yura.lukyanov.versionsComparator.hibernate.model.ObjectType"/>
+        <mapping class="yura.lukyanov.versionsComparator.hibernate.model.AttrObjectType"/>
+    </session-factory>
+</hibernate-configuration>
